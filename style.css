@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.bcg {
+    min-height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_box {
+    width: 350px;
+    height: 380px;
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.card_pattern {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+}
+
+.profilepic {
+    position: relative;
+    top: -55px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.profile_info {
+    position: relative;
+    text-align: center;
+    top: -55px;
+    margin-bottom: 10px;
+}
+
+.info_table {
+    height: 80px;
+    width: 350px;
+    position: relative;
+    top: -30px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.267);
+}
+
+th {
+    padding: 22px 30px 0px 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: hsl(229, 23%, 23%);
+}
+
+td {
+    font-size: 0.62rem;
+    text-align: center;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1.5px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: hsl(227, 10%, 46%);
+}
+
+.bold {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.london {
+    font-size: 0.8rem;
+}
+
+footer {
+    font-size: 11px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    bottom: 25px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:400px) {
+    body {
+        overflow: hidden;
+    }
+
+    .main_box {
+        width: 280px;
+        height: 360px;
+    }
+
+    .attribution {
+        font-size: 0.56rem;
+    }
+
+    th {
+        padding: 22px 20px 0px 20px;
+    }
+}
